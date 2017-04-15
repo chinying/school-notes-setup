@@ -49,9 +49,8 @@ module.exports = function(grunt) {
   grunt.registerTask('build', function() {
     const exec = require('child_process').exec;
     grunt.file.expand("src/*.md").forEach(function(file) {
-      const fn = file.split("/")[1].split(".")[0];
-      console.log(file, fn);
-      exec("pandoc --template=src/template.html --mathjax -f markdown -t html " + file + " -o dist/" + fn + ".html",
+      const filename = file.split("/")[1].split(".")[0];
+      exec("pandoc --template=src/template.html --mathjax -f markdown -t html " + file + " -o dist/" + filename + ".html",
       (err, stdout, stderr) => {
         if (err) console.log(err);
       });
