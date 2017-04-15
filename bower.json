@@ -1,0 +1,21 @@
+{
+  "name": "my-notes",
+  "authors": [
+    "Seah Chin Ying <scy.6char@gmail.com>"
+  ],
+  "description": "lecture / revision notes",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
